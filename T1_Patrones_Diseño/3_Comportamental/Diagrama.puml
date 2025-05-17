@@ -1,0 +1,35 @@
+@startuml
+
+interface SalaChat {
+  + obtenerNombre(): String
+  + agregarUsuario(usuario: Usuario): void
+  + eliminarUsuario(usuario: Usuario): void
+  + obtenerUsuarios(): List<Usuario>
+  + enviarMensaje(mensaje: String, remitente: Usuario): void
+}
+
+class SalaChatConcreta implements SalaChat {
+  + nombre: String
+  - miembros: List<Usuario>
+  --
+  + obtenerNombre(): String
+  + agregarUsuario(usuario: Usuario): void
+  + eliminarUsuario(usuario: Usuario): void
+  + obtenerUsuarios(): List<Usuario>
+  + enviarMensaje(mensaje: String, remitente: Usuario): void
+}
+
+
+class Usuario {
+  - nombre: String
+  --
+  + enviarMensaje(mensaje: String, salaChat: SalaChat): void
+  + recibirMensaje(mensaje: String, remitente: User, salaChat: SalaChat): void
+  + getNombre(): String
+}
+
+
+SalaChatConcreta o-- Usuario : Contiene
+Usuario ..> SalaChat : Usa
+
+@enduml

@@ -1,0 +1,41 @@
+@startuml
+
+interface Notification {
+    +send(message: String)
+}
+
+class MessageNotification implements Notification {
+    +send(message: String)
+}
+
+class AlertNotification implements Notification {
+    +send(message: String)
+}
+
+class WarningNotification implements Notification {
+    +send(message: String)
+}
+
+class ConfirmationNotification implements Notification {
+    +send(message: String)
+}
+
+interface Platform {
+    +display(message: String)
+}
+
+class WebPlatform implements Platform {
+    +display(message: String)
+}
+
+class MobilePlatform implements Platform {
+    +display(message: String)
+}
+
+class DesktopPlatform implements Platform {
+    +display(message: String)
+}
+
+Notification o-- Platform
+
+@enduml

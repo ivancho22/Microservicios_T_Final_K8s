@@ -2,7 +2,7 @@
 
 ##
 
-Para los tres escenarios correspodientes al trabajo 1 - Patrones de diseño, a continuación se resume el tipo de patrón de diseño junto con el patrón de diseño específico:
+Para los tres escenarios correspodientes al trabajo 1 - Patrones de diseño, a continuación se resumen los patrones de diseños implementados en cada ejercicio:
 
 | Escenario                 | Tipo de Patrón   | Patrón de Diseño |
 |---------------------------|------------------|------------------|
@@ -10,22 +10,21 @@ Para los tres escenarios correspodientes al trabajo 1 - Patrones de diseño, a c
 | 2 - App de notificaciones | Estructural      | Bridge           |
 | 3 - App de chat grupal    | Comportamental   | Mediator         |
 
-## Diagramas de clase UML
-
-
-
 ## 1_Creacional
-Implementación del patrón **Builder** ....
+Este folder contiene la solución del escenario uno, bajo la implementación del patrón de tipo **Builder**.
 
 ## 2_Estructural
-Implementación del patrón **Bridge** ....
+Este folder contiene la solución del escenario dos, bajo la implementación del patrón de tipo **Bridge**. 
 
 ## 3_Comportamental
-Implementación del patrón **Mediator** ....
+Este folder contiene la solución del escenario tres, bajo la implementación del patrón de tipo **Mediator**.
 
 
+##
 
---- Cada folder contiene:
+> **Cada folder contiene:**
 
-- Código fuente del ejercicio (`.py`) basado en el patrón correspondiente.
+- Resúmen de la solución `README.md`. 
+- Código fuente del ejercicio basado en el patrón correspondiente. Cada archivo `.py` representa una parte modular de la solución.
+- Diagrama de clases en formato `.png` y `.puml`.
 

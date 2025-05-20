@@ -1,0 +1,52 @@
+@startuml
+title Diagrama de clases - Patrón Builder para Automóvil
+
+' Clases principales
+class Automovil {
+    - tipo_motor: String
+    - color: String
+    - llantas: String
+    - sonido: String
+    - interiores: String
+    - techo_solar: bool
+    - gps: bool
+    + __str__(): String
+}
+
+abstract class AutomovilBuilder {
+    + reset(): void
+    + set_motor(tipo: String): AutomovilBuilder
+    + set_color(color: String): AutomovilBuilder
+    + set_llantas(llantas: String): AutomovilBuilder
+    + set_sonido(sonido: String): AutomovilBuilder
+    + set_interiores(interiores: String): AutomovilBuilder
+    + set_techo_solar(tiene: bool): AutomovilBuilder
+    + set_gps(tiene: bool): AutomovilBuilder
+    + build(): Automovil
+}
+
+class AutomovilConcretoBuilder {
+    - _automovil: Automovil
+    + reset(): void
+    + set_motor(tipo: String): AutomovilBuilder
+    + set_color(color: String): AutomovilBuilder
+    + set_llantas(llantas: String): AutomovilBuilder
+    + set_sonido(sonido: String): AutomovilBuilder
+    + set_interiores(interiores: String): AutomovilBuilder
+    + set_techo_solar(tiene: bool): AutomovilBuilder
+    + set_gps(tiene: bool): AutomovilBuilder
+    + build(): Automovil
+}
+
+class Director {
+    - _builder: AutomovilBuilder
+    + construir_auto_de_lujo(): Automovil
+    + construir_auto_basico(): Automovil
+}
+
+' Relaciones
+AutomovilBuilder <|-- AutomovilConcretoBuilder
+Director --> AutomovilBuilder
+AutomovilConcretoBuilder --> Automovil
+
+@enduml

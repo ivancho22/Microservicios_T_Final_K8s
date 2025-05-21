@@ -13,11 +13,17 @@ Para los tres escenarios correspodientes al trabajo 1 - Patrones de diseño, a c
 ## 1_Creacional
 Este folder contiene la solución del escenario uno, bajo la implementación del patrón de tipo **Builder**.
 
+![image](https://github.com/user-attachments/assets/c94d0395-a3ea-4a83-8c9c-41b696bd32bc)
+
 ## 2_Estructural
-Este folder contiene la solución del escenario dos, bajo la implementación del patrón de tipo **Bridge**. 
+Este folder contiene la solución del escenario dos, bajo la implementación del patrón de tipo **Bridge**.
+
+![image](https://github.com/user-attachments/assets/d8db5d8a-bbe5-4e09-a009-a918bef51578)
 
 ## 3_Comportamental
 Este folder contiene la solución del escenario tres, bajo la implementación del patrón de tipo **Mediator**.
+
+![image](https://github.com/user-attachments/assets/58e389a8-2e55-4321-bec5-0b7b1b70204f)
 
 
 ##

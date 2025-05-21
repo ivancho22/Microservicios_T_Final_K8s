@@ -1,5 +1,7 @@
+#Notification I
 from abc import ABC, abstractmethod
-from platform_ import Platform
+from Platform_ import Platform
+
 # Abstraction - Notification
 class Notification(ABC):
     def __init__(self, platform: Platform):

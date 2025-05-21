@@ -1,4 +1,5 @@
-from platform_ import Platform
+#Platform Type 1
+from Platform_ import Platform
 
 class WebPlatform(Platform):
     def display(self, message: str):

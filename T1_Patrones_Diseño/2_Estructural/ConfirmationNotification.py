@@ -1,3 +1,4 @@
+#Notif. Type 4
 from Notification import Notification
 
 class ConfirmationNotification(Notification):

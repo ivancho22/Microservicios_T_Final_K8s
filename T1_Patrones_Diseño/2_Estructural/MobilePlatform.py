@@ -1,4 +1,5 @@
-from platform_ import Platform
+#Platform Type 2
+from Platform_ import Platform
 
 class MobilePlatform(Platform):
     def display(self, message: str):

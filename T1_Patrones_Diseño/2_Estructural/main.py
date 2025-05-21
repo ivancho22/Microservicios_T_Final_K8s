@@ -25,6 +25,7 @@ if __name__ == "__main__":
 
  
     # Test to send notific.
+    print("\n=== Notificaciones por Plataforma ===")
     message.send("Hola! Tenemos descuentos en laptops solo por hoy.")
     confirmation.send("Tu pedido ha sido enviado exitosamente.")
     alert.send("Tu pedido está en camino.")

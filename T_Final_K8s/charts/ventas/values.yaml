@@ -1,0 +1,9 @@
+replicaCount: 1
+image:
+  repository: anderson442/ventas ##docker hub repository
+  tag: latest
+
+service:
+  type: NodePort
+  port: 80
+  nodePort: 30080

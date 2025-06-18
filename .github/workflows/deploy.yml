@@ -22,7 +22,7 @@ jobs:
 
       - name: Construir imagen Docker
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/ventas:latest .
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/ventas:latest ./T_Final_K8s
 
       - name: Publicar imagen en Docker Hub
         run: |

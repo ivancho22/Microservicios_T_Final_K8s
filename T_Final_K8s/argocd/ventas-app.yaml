@@ -1,18 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ventas-app          # Nombre de la aplicación dentro de Argo CD
-  namespace: argocd         # Namespace donde corre Argo CD
+  name: ventas-app
+  namespace: argocd
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/tu_usuario/ventas-app'  # URL de tu repo GIT
-    targetRevision: HEAD                                 # Rama principal (puede ser main o master)
-    path: charts/ventas                                   # Ruta donde está el Chart.yaml
+    repoURL: https://github.com/andersonmonroy/Software-Architecture1.git
+    targetRevision: HEAD
+    path: T_Final_K8s/charts/ventas
   destination:
-    server: 'https://kubernetes.default.svc'             # Cluster local (in-cluster)
-    namespace: default                                    # Namespace donde se desplegará la app
+    server: https://kubernetes.default.svc
+    namespace: default
   syncPolicy:
-    automated:                                            # ArgoCD hará sync automáticamente
-      prune: true                                         # Elimina recursos que ya no están en Git
-      selfHeal: true                                      # Reaplica si hay cambios fuera de Git
+    automated:
+      prune: true
+      selfHeal: true

@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Construir imagen Docker
+      - name: Construir imagen Docker ##sufolder hosting docker file
         run: |
           docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/ventas:latest ./T_Final_K8s
 

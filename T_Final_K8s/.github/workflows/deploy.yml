@@ -1,28 +1,29 @@
 name: CI/CD - Microservicio Ventas
 
 on:
-  push:          # any push and branch
-    branches:   
-      - '**'
+  push:
+    branches:
+      - '**'         # any branch
+  workflow_dispatch:  # Manual exec from GitHub
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout del repositorio
-      uses: actions/checkout@v3
+      - name: Checkout del repositorio
+        uses: actions/checkout@v3
 
-    - name: Login en Docker Hub
-      uses: docker/login-action@v3
-      with:
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Login en Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-    - name: Construir imagen Docker
-      run: |
-        docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/ventas:latest .
+      - name: Construir imagen Docker
+        run: |
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/ventas:latest .
 
-    - name: Publicar imagen en Docker Hub
-      run: |
-        docker push ${{ secrets.DOCKERHUB_USERNAME }}/ventas:latest
+      - name: Publicar imagen en Docker Hub
+        run: |
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/ventas:latest

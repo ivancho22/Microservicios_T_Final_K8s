@@ -8,5 +8,5 @@ spec:
     app: {{ .Release.Name }}
   ports:
     - port: 80
-      targetPort: 3030   # <-- importante
-      nodePort: 30080    # <-- puerto para acceder desde localhost:30080
+      targetPort: 3030  # Este debe ser el puerto donde corre tu app dentro del contenedor
+      protocol: TCP

@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/andersonmonroy/Software-Architecture1.git
+    repoURL: https://github.com/andersonmonroy/Software-Architecture1.git ##root repo
     targetRevision: HEAD
     path: T_Final_K8s/charts/ventas
   destination:

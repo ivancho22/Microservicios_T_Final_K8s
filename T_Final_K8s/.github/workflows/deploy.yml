@@ -1,9 +1,9 @@
 name: CI/CD - Microservicio Ventas
 
 on:
-  push:
-    branches:
-      - main 
+  push:          # any push and branch
+    branches:   
+      - '**'
 
 jobs:
   deploy:

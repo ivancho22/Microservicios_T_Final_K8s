@@ -12,7 +12,7 @@ Este proyecto implementa un **microservicio de ventas** utilizando las tecnolog�
 - [DockerHub](https://hub.docker.com/) - Publicación de la imágen
 - [Helm](https://helm.sh/) - Gestión de charts/templates para despliegue en Kubernetes
 - [Kubernetes](https://kubernetes.io/) - Orquestación de contenedores
-- [Argo CD](https://argo-cd.readthedocs.io/) - GitOps para despliegue continuo, sincronizando cambios con clúster de 
+- [Argo CD](https://argo-cd.readthedocs.io/) - GitOps para despliegue continuo, sincronizando cambios con clúster
 - [GitHub Actions](https://github.com/features/actions) - CI/CD automatizado y sincronizado con Argo CD
 
 ---

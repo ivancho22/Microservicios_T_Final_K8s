@@ -43,6 +43,6 @@ def editar(request: Request, idx: int):
 
 
 
-## ---> EXECUTE MICROSERVICE  cd ..
+## ---> EXECUTE MICROSERVICE LOCALLY cd ..
 ## uvicorn app.main:app --reload --port 3300  http://localhost:3300
 

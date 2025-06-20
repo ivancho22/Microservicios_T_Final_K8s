@@ -1,4 +1,4 @@
-replicaCount: 2
+replicaCount: 3
 image:
   repository: anderson442/ventas ##docker hub repository
   tag: latest

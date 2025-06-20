@@ -87,7 +87,7 @@ helm install ventas-chart charts/ventas
 
 ## GitOps con Argo CD
 
-1. Agrega el repo a Argo CD
+1. Agrega el repo a Argo CD.
 2. Apunta al archivo `argocd/ventas-app.yaml`
 3. Argo CD sincroniza los charts Helm y despliega el microservicio automáticamente
 
@@ -95,9 +95,9 @@ helm install ventas-chart charts/ventas
 
 ## CI/CD con GitHub Actions
 
-Cada `commit` en `main`:
-- Construye la imagen Docker
-- Hace `push` a Docker Hub
+Cada `commit` en cualquier rama:
+- Construye la imagen Docker.
+- Hace `push` a Docker Hub.
 
 Archivo del pipeline: `.github/workflows/deploy.yml`
 

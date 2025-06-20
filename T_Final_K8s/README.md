@@ -102,3 +102,9 @@ Cada `commit` en cualquier rama:
 Archivo del pipeline: `.github/workflows/deploy.yml`
 
 ---
+
+## Autor
+
+Anderson Monroy  
+GitHub: [github.com/andersonmonroy](https://github.com/andersonmonroy)
+

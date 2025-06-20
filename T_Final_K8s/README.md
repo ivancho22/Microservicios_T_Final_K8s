@@ -1,6 +1,6 @@
 # Microservicio de Ventas - Proyecto Final K8s
 
-Este proyecto implementa un **microservicio de ventas** utilizando las tecnologías mencionadas a continuación:
+Este proyecto implementa un **microservicio de ventas** utilizando las tecnologías mencionadas a continuación con el fin de ilustrar el proceso de CI/CD
 
 ![image](https://github.com/user-attachments/assets/73774ab3-c330-407b-860a-9d12a4c4676d)
 
